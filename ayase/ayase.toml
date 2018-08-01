@@ -1,0 +1,12 @@
+store = "mysql"
+layout = "asagi"
+
+[mysql]
+host = "127.0.0.1"
+database = "fuuka"
+username = "root"
+password = "++a$x]_oqEBh]PJ>Qwza"
+
+[engine]
+site = "4chan"
+boards = ["g", "sci"]

@@ -1,0 +1,6 @@
+[package]
+name = "ayase_eightchan"
+version = "0.1.0"
+authors = ["r3c0d3x <r3c0d3x@airmail.cc>"]
+
+[dependencies]

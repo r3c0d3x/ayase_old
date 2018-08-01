@@ -1,0 +1,52 @@
+[package]
+name = "ayase"
+version = "0.1.0"
+authors = ["r3c0d3x <r3c0d3x@airmail.cc>"]
+
+[features]
+default = ["db-mysql", "db-postgresql", "layout-foolfuuka"]
+#db-mysql = ["diesel/mysql", "diesel_codegen/mysql", "mysql", "r2d2_mysql"]
+db-mysql = ["mysql", "r2d2_mysql"]
+#db-postgresql = ["diesel/postgres", "diesel_codegen/postgres", "postgres", "r2d2_postgres"]
+db-postgresql = ["postgres", "r2d2_postgres"]
+layout-ayase = ["postgres/with-uuid", "uuid"]
+layout-foolfuuka = []
+
+[dependencies]
+ayase_asagi = { path = "../shamrock" }
+ayase_chan = { path = "../shamrock" }
+ayase_config = { path = "../shamrock" }
+ayase_core = { path = "../shamrock" }
+ayase_eightchan = { path = "../shamrock" }
+ayase_fourchan = { path = "../shamrock" }
+ayase_json = { path = "../shamrock" }
+ayase_mysql = { path = "../shamrock" }
+ayase_postgresql = { path = "../shamrock" }
+#futures-state-stream = "0.1"
+#diesel_codegen = "0.14"
+either = "*"
+error-chain = "0.10"
+futures = "0.1"
+futures-cpupool = "0.1"
+hyper = "0.11"
+hyper-tls = "0.1"
+mysql = { version = "8", optional = true }
+postgres = { version = "0.15", features = ["with-serde_json"], optional = true }
+native-tls = "0.1"
+r2d2 = "0.7"
+r2d2_mysql = { version = "8", optional = true }
+r2d2_postgres = { version = "0.13", optional = true }
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"
+serde-value = "*"
+shamrock = { path = "../shamrock" }
+tokio-core = "0.1"
+toml = "0.4"
+uuid = { version = "0.5", optional = true }
+
+[[bin]]
+name = "ayase"
+path = "src/main.rs"
+
+#tokio-postgres = { version = "0.2", features = ["with-serde_json"] }

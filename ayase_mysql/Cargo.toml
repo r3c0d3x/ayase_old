@@ -1,0 +1,13 @@
+[package]
+name = "ayase_mysql"
+version = "0.1.0"
+authors = ["r3c0d3x <r3c0d3x@airmail.cc>"]
+
+[dependencies]
+futures = "0.1"
+mysql = { version = "8", features = ["ssl"] }
+r2d2 = "0.7"
+r2d2_mysql = "8"
+serde = "1.0"
+serde_derive = "1.0"
+shamrock = { version = "0.1", path = "../shamrock" }

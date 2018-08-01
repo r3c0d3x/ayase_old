@@ -1,0 +1,10 @@
+[package]
+name = "ayase_json"
+version = "0.1.0"
+authors = ["r3c0d3x <r3c0d3x@airmail.cc>"]
+
+[dependencies]
+futures = "0.1"
+serde = "1.0"
+serde_json = "1.0"
+shamrock = { version = "0.1", path = "../shamrock" }

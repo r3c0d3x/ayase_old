@@ -1,0 +1,5 @@
+so we want an asagi layout (which is json format) on a mysql db. this means that we're going to need something that can insert values that mysql wants. so, we would need the format for the asagi layout to be able to be converted to the engine format.
+
+pub trait Convert<E: Engine, L: Layout> {
+    fn convert(L::Format) -> E::Format;
+}

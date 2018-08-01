@@ -1,0 +1,14 @@
+[workspace]
+members = [
+    "ayase/",
+    "ayase_asagi/",
+    "ayase_chan/",
+    "ayase_config/",
+    "ayase_core/",
+    "ayase_eightchan/",
+    "ayase_fourchan/",
+    "ayase_json/",
+    "ayase_mysql/",
+    "ayase_postgresql/",
+    "shamrock/",
+]

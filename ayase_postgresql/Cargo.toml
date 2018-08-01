@@ -1,0 +1,13 @@
+[package]
+name = "ayase_postgresql"
+version = "0.1.0"
+authors = ["r3c0d3x <r3c0d3x@airmail.cc>"]
+
+[dependencies]
+futures = "0.1"
+postgres = { version = "0.15", features = ["with-serde_json"] }
+r2d2 = "0.7"
+r2d2_postgres = "0.13"
+serde = "1.0"
+serde_derive = "1.0"
+shamrock = { version = "0.1", path = "../shamrock" }
